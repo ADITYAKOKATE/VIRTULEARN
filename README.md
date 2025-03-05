@@ -10,9 +10,6 @@ VirtuLearn is an **interactive virtual lab platform** designed to provide studen
 - **⚡ User-Friendly Interface** – Easily navigate and conduct experiments with a smooth UI.
 - **🌍 Web-Based Platform** – No installation required, accessible on all devices.
 
-## 🖼️ Preview VirtuLearn
-Before ➡️ After  
-<img src="Presentation/VirtuLearn1.png" width="480"> <img src="Presentation/VirtuLearn2.png" width="500">
 
 ## 🛠️ How It Works
 1. **Choose an experiment** from Physics, Chemistry, or Biology categories.
@@ -28,7 +25,8 @@ Before ➡️ After
 - **Python (AI-Powered Analytics)**
 
 ## Screenshots
-<img src="Presentation/Picture1.png" width="500"><img src="Presentation/Picture2.png" width="500">
+<img src="Screenshot 2025-03-05 132613.png" width="500"><img src="Screenshot 2025-03-05 132903.png" width="500">
+<img src="Screenshot 2025-03-05 132445.png" width="500"><img src="Screenshot 2025-03-05 132831.png" width="500">
 
 ## 🤝 Contributing
 We welcome contributions! Feel free to submit a pull request or report any issues.
