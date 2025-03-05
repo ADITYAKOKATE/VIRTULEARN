@@ -29,7 +29,6 @@ VirtuLearn is an **interactive virtual lab platform** designed to provide studen
 <img src="Screenshot 2025-03-05 132445.png" width="500"><img src="Screenshot 2025-03-05 132831.png" width="500">
 
 ## 🤝 Contributing
-We welcome contributions! Feel free to submit a pull request or report any issues.
-
+**I haven't uploaded all the files yet to avoid copying, once i would complete with my project, they will be uploaded soon...**
 
 _Developed with ❤️ by Aditya Kokate_
