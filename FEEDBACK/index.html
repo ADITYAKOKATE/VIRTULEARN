@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VirtuLearn Feedback Form</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url("https://img.freepik.com/free-vector/gradient-geometric-shapes-dark-background-concept_23-2148438263.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .feedback-container {
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            max-width: 650px;
+            margin: auto;
+            border: 5px solid #010422;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .feedback-container:hover {
+            box-shadow: 0 10px 30px rgba(0, 229, 255, 0.6);
+            transform: translateY(-10px);
+        }
+
+        h1 {
+            text-align: center;
+            color: #01023a;
+            margin-bottom: 20px;
+            font-size: 2.8rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #01023a;
+            font-size: 1.2rem;
+        }
+
+        input, select, textarea {
+            padding: 15px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            font-size: 16px;
+            outline: none;
+            transition: all 0.3s ease;
+            background-color: #f9f9f9;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            border-color: #00e5ff;
+            box-shadow: 0 0 10px rgba(0, 229, 255, 0.8);
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            background: linear-gradient(45deg, #007bff, #00d4ff);
+            color: #fff;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.5);
+        }
+
+        button:hover {
+            background: linear-gradient(45deg, #0056b3, #009acd);
+            box-shadow: 0 6px 20px rgba(0, 86, 179, 0.7);
+            transform: scale(1.05);
+        }
+
+        button:active {
+            transform: scale(0.95);
+            box-shadow: 0 2px 10px rgba(0, 86, 179, 0.5);
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .button-group button {
+            flex: 1;
+            margin: 0 10px;
+        }
+
+        .button-group button:first-child {
+            margin-left: 0;
+        }
+
+        .button-group button:last-child {
+            margin-right: 0;
+        }
+
+        @media (max-width: 768px) {
+            .feedback-container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            button {
+                font-size: 16px;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+
+            .button-group button {
+                margin: 10px 0;
+            }
+        }
+    </style>
+    <script>
+        function updateTopics() {
+            const subject = document.getElementById('subject').value;
+            const topicSelect = document.getElementById('topic');
+            // Clear existing options in the topic select element
+            topicSelect.innerHTML = '';
+            let topics = [];
+            // Define topics based on the selected subject
+            switch(subject) {
+                case 'Physics':
+                    topics = ['Kinematics', 'Newton\'s Laws', 'Optics', 'Thermodynamics'];
+                    break;
+                case 'Chemistry':
+                    topics = ['Periodic Table', 'Chemical Reactions', 'Organic Chemistry', 'Inorganic Chemistry'];
+                    break;
+                case 'Mathematics':
+                    topics = ['Algebra', 'Calculus', 'Geometry', 'Statistics'];
+                    break;
+                case 'Mechanics':
+                    topics = ['Dynamics', 'Mechanics of Materials', 'Fluid Mechanics', 'Energy Transfer'];
+                    break;
+                case 'Basic Electrical Engineering':
+                    topics = ['Basic Electronics', 'Electrical Circuits', 'Digital Logic', 'Power Systems'];
+                    break;
+            }
+
+            // Populate the topic select element with the updated options
+            topics.forEach(topic => {
+                const option = document.createElement('option');
+                option.value = topic.toLowerCase().replace(/ /g, '_');
+                option.textContent = topic;
+                topicSelect.appendChild(option);
+            });
+        }
+
+        function saveFeedback() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const topic = document.getElementById('topic').value;
+            const feedback = document.getElementById('feedback').value;
+
+            const feedbackData = JSON.parse(localStorage.getItem('feedbackData')) || [];
+
+            feedbackData.push({
+                name,
+                email,
+                subject,
+                topic,
+                feedback
+            });
+
+            localStorage.setItem('feedbackData', JSON.stringify(feedbackData));
+            alert('Feedback submitted successfully!');
+            document.getElementById('feedback-form').reset();
+        }
+
+        function navigateToComments() {
+            window.location.href = 'comments.html';
+        }
+    </script>
+</head>
+<body>
+    <div class="feedback-container">
+        <h1>Feedback Form</h1>
+        <form id="feedback-form" onsubmit="event.preventDefault(); saveFeedback();">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject" onchange="updateTopics()">
+                <option value="select">-select-</option>
+                <option value="Physics">Physics</option>
+                <option value="Chemistry">Chemistry</option>
+                <option value="Mathematics">Mathematics</option>
+                <option value="Mechanics">Mechanics</option>
+                <option value="Basic Electrical Engineering">Basic Electrical Engineering</option>
+            </select>
+
+            <label for="topic">Topic</label>
+            <select id="topic" name="topic">
+                <!-- Options will be populated based on the selected subject -->
+            </select>
+
+            <label for="feedback">Your Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="6" placeholder="Share your thoughts here..." required></textarea>
+            
+            <div class="button-group">
+                <button type="submit">Submit Feedback</button>
+                <button type="button" onclick="navigateToComments()">View Comments</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

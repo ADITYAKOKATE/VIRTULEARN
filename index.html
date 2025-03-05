@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.min.css">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>VirtuLearn</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">VirtuLearn</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mr-3">
+            <a class="nav-link active" aria-current="page" href="#one">Home</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="#two">About Us</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link" id="visualizeLink" href="#">Visualize</a>
+          </li>
+          <li class="nav-item mr-5">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="visualizeSection" class="slide-down-section">
+    <button id="closeButton" class="close-button">&times;</button>
+    <div class="container visualize-content">
+      <h2 class="text-center">Explore Our Virtual World</h2>
+      <div class="row">
+
+        <div class="col-md-4">
+          <a href="#three">
+            <div class="card visualize-card ph">
+              <div class="blur1">
+                <div class="card-body">
+                  <h5 class="card-title">Physics</h5>
+                  <p class="card-text">Dive into interactive experiments and
+                    simulations related to physics.</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="#four">
+            <div class="card visualize-card ch">
+              <div class="blur1">
+                <div class="card-body">
+                  <h5 class="card-title">Chemistry</h5>
+                  <p class="card-text">Explore chemical reactions, virtual labs,
+                    and simulations for chemistry enthusiasts.</p>
+                </div>
+              </div>
+            </div>
+
+          </a>
+
+        </div>
+        <div class="col-md-4">
+          <a href="#five">
+            <div class="card visualize-card ma">
+              <div class="blur1">
+                <div class="card-body">
+                  <h5 class="card-title">Mathematics</h5>
+                  <p class="card-text">Explore complex mathematical concepts and
+                    visualize them interactively.</p>
+                </div>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <a href="#seven">
+            <div class="card visualize-card me">
+              <div class="blur1">
+                <div class="card-body">
+                  <h5 class="card-title">Mechanics</h5>
+                  <p class="card-text">Understand the principles of mechanics
+                    through interactive simulations and experiments.</p>
+                </div>
+              </div>
+            </div>
+
+          </a>
+
+        </div>
+
+        <div class="col-md-4">
+          <a href="#eight">
+            <div class="card visualize-card be">
+              <div class="blur1">
+                <div class="card-body">
+                  <h5 class="card-title">Basic Electrical Engineering</h5>
+                  <p class="card-text">Learn the basics of electrical circuits
+                    and components through practical simulations.</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-1 blur" id="one">
+    <video class="background-video" autoplay muted loop>
+      <source src="/images/37139-412292803_large.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="col-md-6 hero-content">
+      <h1 class="h">
+        Virtual Journey to Science<br />
+        <span class="highlight">starts here</span>
+      </h1>
+      <p class="p">
+        Unleash your curiosity, test your ideas, and bring your scientific
+        visions to life - no boundaries, no limits.
+      </p>
+
+    </div>
+
+  </div>
+  <div class="bg-2 d-flex flex-row" id="two">
+
+    <div class="col-md-5" style="padding-top: 100px;">
+      <h1 class="h" style="margin-bottom: 60px;">Why Us</h1>
+      <p class="p1">
+        Traditional laboratory experiences often face challenges such as
+        limited accessibility, high costs, and safety concerns, which can
+        hinder students' ability to engage in hands-on learning. A virtual lab
+        experiment website aims to address these issues by providing an
+        accessible, cost-effective, and safe platform for students to conduct
+        experiments. This platform offers you:
+      </p>
+      <ul class="ul">
+        <li>A wide range of interactive simulations and experiments</li>
+        <li>Enables learners to explore complex concepts and develop practical
+          skills anytime and anywhere</li>
+        <li>Ultimate enhancement to their educational experience and
+          understanding of scientific principles.</li>
+      </ul>
+    </div>
+    <div class="col-md-7">
+      <div class="testimonial-carousel">
+        <div class="testimonial-item">
+          <img src="https://image.pngaaa.com/306/81306-middle.png" class="im" alt="Student 1" />
+          <div>
+            <p>"I find physics challenging because it involves abstract concepts that are hard to visualize and
+              understand. The mathematical complexity, especially calculus and algebra, can be intimidating. Without
+              hands-on experiments, it's difficult to connect theory with practical application."</p>
+          </div>
+        </div>
+        <div class="testimonial-item">
+          <img src="https://www.pngmart.com/files/23/Female-PNG-Isolated-HD.png" class="im" alt="Student 2" />
+          <div>
+            <p>"I find it hard to understand chemistry due to abstract concepts, complex terminology, and the need for
+              strong math skills. The lack of practical application and the focus on memorization over understanding
+              also make it challenging to connect different topics."</p>
+          </div>
+        </div>
+        <div class="testimonial-item">
+          <img src="https://www.shareicon.net/data/2016/05/24/770117_people_512x512.png" class="im" alt="Student 3" />
+          <div>
+            <p>"I often face several challenges in mathematics. I sometimes struggle with understanding fundamental
+              concepts, which makes it harder to grasp more advanced topics. Applying concepts to solve problems can be
+              difficult, and I sometimes feel anxious about math, which affects my performance."</p>
+          </div>
+        </div>
+        <div class="testimonial-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/5231/5231019.png" class="im" alt="Student 4" />
+          <div>
+            <p>"As a student studying mechanics, I often face several challenges that make mastering the subject
+              difficult. One of the primary struggles is grasping the abstract nature of the concepts, such as
+              understanding forces, motion, and equilibrium in real-world applications. "</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section id="features" class="section">
+    <div class="features-container">
+      <h2 style="font-family:bree serif">Key <span>Features</span></h2>
+      <p class="features-intro mb-5">VirtuLearn an innovative and
+        comprehensive educational platform aimed at enhancing learning through
+        technology</p>
+
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          <h3>Realistic
+            Simulations</h3>
+          <p>3D models can simulate real-world
+            scenarios and experiments, providing a
+            closer approximation of actual physical
+            phenomena and chemical reactions.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-robot"></i>
+          </div>
+          <h3>Interactive
+            Learning</h3>
+          <p>Students can manipulate 3D models to
+            explore different aspects of a concept,
+            facilitating a deeper and more
+            personalized understanding.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3>Problem-Solving
+            Skills</h3>
+          <p> Visualizing mathematical and physical
+            problems in 3D helps in developing
+            spatial reasoning and problem-solving
+            skills.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <h3>Accessible
+            Learning</h3>
+          <p> 3D visualizations can make complex
+            topics more accessible to students with
+            different learning styles and needs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="three">
+    <div class="video-container">
+      <video autoplay muted loop>
+        <source src="./images/videoplayback (1).mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+      <div class="video-fade-both"></div>
+      <div class="blur">
+        <h2 class="h2">
+          Dive into the <span style="color:rgb(60, 60, 250)">World
+            Of Visualization</span>
+        </h2>
+        <div class="video-content col-md-6">
+          <h1 class="three-h">Physics</h1>
+          <p class="p1">
+            Physics is a branch of science that explores the fundamental
+            principles governing the universe, focusing on how matter, energy,
+            space, and time interact. It spans topics from the motion of
+            everyday objects to the behavior of subatomic particles and the
+            nature of black holes. Key areas within physics include classical
+            mechanics, which deals with motion and forces; electromagnetism,
+            which explains electric and magnetic fields; thermodynamics, which
+            studies heat, energy, and work; quantum mechanics, which uncovers
+            the strange behaviors of particles at the smallest scales; and
+            relativity, which redefines our understanding of space and time.
+          </p>
+          <div>
+            <a href="./PHYSICS/index.html"><button class="explore">Explore<svg xmlns="http://www.w3.org/2000/svg"
+                  width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                </svg></button></a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <div id="four">
+    <div class="video-container">
+      <video autoplay muted loop>
+        <source src="./images/videoplayback (2).mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+      <div class="video-fade-both"></div>
+      <div class="blur">
+        <div class="col-md-6">
+
+        </div>
+        <div class="video-content col-md-6" style="left:50%;top:30%">
+          <h1 style="padding-top:300px; color:rgb(95, 95, 241)" class="four-h">Chemistry</h1>
+          <p class="p1">
+
+            Chemistry is the scientific study of matter, its
+            properties, composition, structure, and the
+            changes it undergoes during chemical reactions.
+            It explores the interactions between atoms and
+            molecules, which are the building blocks of
+            matter. Chemistry is often referred to as the
+            "central science" because it connects and
+            overlaps with various scientific disciplines
+            such as physics, biology, environmental science,
+            and medicine.
+          </p>
+          <div>
+            <a href="./CHEMISTRY/index.html"><button class="explore">Explore<svg xmlns="http://www.w3.org/2000/svg"
+                  width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                </svg></button></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <div id="five">
+    <div class="video-container">
+      <video autoplay muted loop>
+        <source src="./images/vecteezy_math-science-formula-mathematic-equation-calculation_40513133.mp4"
+          type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+      <div class="video-fade-both"></div>
+      <div class="blur">
+        <div class="col-md-6">
+
+        </div>
+        <div class="video-content col-md-6" style="top:30%">
+          <h1 style="padding-top:300px; color:rgb(95, 95, 241)" class="four-h">Mathematics</h1>
+          <p class="p1">
+            Mathematics is the abstract science of numbers,
+            quantity, structure, space, and change. It is a
+            foundational discipline that explores patterns,
+            relationships, and logical reasoning.
+            Mathematics provides the tools and language to
+            understand and model the natural world, solve
+            problems, and make informed decisions.
+            Mathematics is fundamental to various fields,
+            including science, engineering, economics, and
+            technology. It provides the framework for
+            critical thinking, problem-solving, and
+            innovation in many aspects of life and work.
+          </p>
+          <div>
+            <a href="./MATHEMATICS/index.html"><button class="explore">Explore
+                <b><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                  </svg></b></button></a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="seven">
+    <div class="video-container">
+      <video autoplay muted loop>
+        <source src="./images/videoplayback (4).mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+      <div class="video-fade-both"></div>
+      <div class="blur">
+        <div class="col-md-6">
+
+        </div>
+        <div class="video-content col-md-6" style="top:30%">
+          <h1 style="padding-top:300px; color:rgb(95, 95, 241)" class="four-h">Mechanics</h1>
+          <p class="p1">
+            Mechanics is a fundamental branch of physics that focuses on the
+            study of motion, forces, and the behavior of physical objects. It
+            explores how objects move, the forces that act upon them, and the
+            principles governing their interactions. Mechanics is broadly
+            divided into classical mechanics and quantum mechanics. Classical
+            mechanics deals with the motion of everyday objects, ranging from
+            projectiles to machines, based on Newton's laws of motion. It
+            includes the study of kinematics, which describes motion without
+            considering its causes, dynamics, which analyzes the forces behind
+            motion, and statics, which examines systems in equilibrium.
+          </p>
+          <div>
+            <a href="./MECHANICAL/index.html">
+              <button class="explore">Explore <b><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                  </svg></b></button>
+
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="eight">
+    <div class="video-container">
+      <video autoplay muted loop>
+        <source src="./images/videoplayback (5).mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+      <div class="video-fade-both"></div>
+      <div class="blur">
+        <div class="col-md-6">
+
+        </div>
+        <div class="video-content col-md-6" style="left:50%;top:30%">
+          <h1 style="padding-top:300px; color:rgb(95, 95, 241)" class="four-h">Basic Electrical Engineering</h1>
+          <p class="p1">
+
+            Basic Electrical Engineering provides a foundational understanding
+            of the principles
+            that govern electrical systems. It covers the analysis of electric
+            circuits, focusing on
+            components like resistors, capacitors, and inductors, and
+            introduces key laws such as
+            Ohm's Law and Kirchhoff's Laws for circuit analysis. The course
+            explores the differences
+            between alternating current (AC) and direct current (DC) systems,
+            their generation, and
+            practical applications. It also delves into power generation,
+            transmission, and the
+            basics of electromagnetism, which are essential for understanding
+            transformers and
+            motors.
+          </p>
+          <div>
+            <a href="./BEE/index.html"><button class="explore">Explore<svg xmlns="http://www.w3.org/2000/svg" width="16"
+                  height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                </svg></button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="ten">
+    <section id="contact" class="section">
+
+      <div class="contact-container">
+        <h2 style="font-family:bree serif">Get in <span>Touch</span></h2>
+        <p class="contact-intro mb-5" style="font-family:bree serif;font-size:25px;">We will be glad to
+          know <span style="color:aqua">your response</span></p>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <h4>Contact as</h4>
+              <p>Team Avinya<br />
+              </p>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-phone"></i>
+              <h4>Contact No</h4>
+              <p>+91 XXXXXXXXXX</p>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <h4>Email Us</h4>
+              <p>teamavinya1234@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <form action="#" method="POST" onsubmit="window.location.href='./FEEDBACK/index.html'; return false;">
+              <h4 class="mb-5">We will be glad to know your response</h4>
+              <button type="submit" class="btn-primary">Feedback</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script type="text/javascript"
+    src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.pkgd.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
